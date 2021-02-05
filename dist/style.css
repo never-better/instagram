@@ -1,0 +1,134 @@
+html {
+  display: block;
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: #000000;
+}
+
+input:focus {
+  outline: none;
+}
+
+h1 {
+  margin: 0;
+}
+
+#navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 3.375rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.navbar__box {
+  max-width: 975px;
+  width: 100%;
+  height: 100%;
+  padding: 0 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 20%;
+          flex: 0 1 20%;
+  padding-top: 0.5rem;
+}
+
+.navbar__search {
+  display: none;
+  min-width: 13.4375rem;
+  height: 1.75rem;
+  border: 0.5px solid #dbdbdb;
+  border-radius: 0.2rem;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+
+.navbar__search input {
+  position: relative;
+  padding: 0.4375rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.2rem;
+  border: 0px;
+}
+
+.navbar__search .ord {
+  color: #8E8E8E;
+  font-size: 0.875rem;
+  font-weight: 200;
+  position: relative;
+  top: -1.375rem;
+  left: 5.5rem;
+  z-index: 2;
+}
+
+.navbar__search .ord__icon {
+  position: relative;
+  top: -0.0625rem;
+}
+
+@media (min-width: 31.25em) {
+  .navbar__search {
+    display: block;
+  }
+}
+
+.navbar__links {
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+
+.navbar__links a:not(:last-child) {
+  margin-right: 1rem;
+}
+
+main {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__box {
+  max-width: 58.4375rem;
+  width: 100%;
+  background-color: aqua;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,87 @@
+#navbar {
+  position: sticky;
+  display: flex;
+  width: 100%;
+  height: 3.375rem;
+
+  justify-content: center;
+
+  border-bottom: 1px solid $lightgrey;
+}
+
+.navbar{
+
+  &__box{
+    max-width: 975px;
+    width: 100%;
+    height: 100%;
+
+    padding: 0 1.25rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo{
+    display: flex;
+
+    flex: 0 1 20%;
+    padding-top: 0.5rem;
+  }
+
+  &__search{
+    display: none;
+    min-width: 13.4375rem;
+    height: 1.75rem;
+    border: 0.5px solid $lightgrey;
+    border-radius: 0.2rem;
+    flex-shrink: 1;
+
+
+
+    input{
+      position: relative;
+      padding: 0.4375rem;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.2rem;
+      border: 0px;
+    }
+
+    .ord{
+      color: $grey;
+      font-size: $font-small;
+      font-weight: 200;
+
+      position: relative;
+      top: -1.375rem;
+      left: 5.5rem;
+      z-index: 2;
+
+      &__icon{
+        position: relative;
+        top:-0.0625rem;
+      }
+    }
+    
+    
+
+    @include breakpoint-up(medium){
+      display: block;
+    }
+  }
+
+
+
+  &__links{
+    flex-shrink: 1;
+
+    a{
+      &:not(:last-child){
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
