@@ -1,5 +1,6 @@
 #navbar {
   position: sticky;
+  top: 0;
   display: flex;
   width: 100%;
   height: 3.375rem;
@@ -7,10 +8,10 @@
   justify-content: center;
 
   border-bottom: 1px solid $lightgrey;
+  background-color: $white;
 }
 
 .navbar{
-
   &__box{
     max-width: 975px;
     width: 100%;
