@@ -19,6 +19,16 @@ a {
   color: #000000;
 }
 
+.address {
+  color: #00376b;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
 input:focus {
   outline: none;
 }
@@ -134,5 +144,90 @@ main {
   max-width: 58.4375rem;
   width: 100%;
   background-color: aqua;
+}
+
+.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2.75rem;
+}
+
+.profile__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30%;
+  margin-right: 1.875rem;
+}
+
+.profile__github {
+  width: 9.375rem;
+  height: 9.375rem;
+}
+
+.profile__text .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile__text .hero .id {
+  font-size: 1.75rem;
+  font-weight: 300;
+  margin-bottom: 1.25rem;
+}
+
+.profile__text .hero img {
+  height: 100%;
+}
+
+.profile__text .number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+
+.profile__text .number .post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 2.5rem;
+}
+
+.profile__text .number .follower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 2.5rem;
+}
+
+.profile__text .number .follow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile__text .number .first {
+  margin-right: 0.3125rem;
+}
+
+.profile__text .number .second {
+  margin-top: 0.125rem;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.profile__text .detail__name {
+  font-weight: 600;
+}
+
+.profile__text .detail__info {
+  margin-top: 0.125rem;
+  line-height: 1.5;
 }
 /*# sourceMappingURL=style.css.map */
