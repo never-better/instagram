@@ -1,0 +1,120 @@
+.post{
+  border-top: 0.0625rem solid $lightgrey;
+
+  .postmenu{
+    display: flex;
+    justify-content: center;
+
+    height: 3.5625rem;
+
+    ul{
+      display: flex;
+      align-items: center;
+
+      height: 100%;
+    }
+    li{
+    height: 100%;
+    font-weight: 600;
+
+      &:not(:last-child){
+        margin-right: 3.75rem;
+      }
+
+      a{
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        svg{
+          margin-right: 0.25rem;
+        }
+      }
+
+      span{
+        font-size: $font-xs;
+      }
+    }
+
+  }
+  
+
+  .postthing{
+
+
+    .row1{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1.75rem;
+    }
+
+    .row2{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    img{
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.post__pic{
+  position: relative;
+  width: 18.3125rem;
+  height: 18.3125rem;
+}
+
+
+
+.post__num{
+  position: absolute;
+
+  height: 100%;
+  width: 100%;
+
+  opacity: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: $white;
+  font-weight: $weight-bold;
+  background-color: $black_tran;
+
+  i{
+    font-size: 1.125rem;
+    margin-right: 0.5rem;
+  }
+
+  span{
+    margin-bottom: 0.0625rem;
+
+    &:not(:last-child){
+      margin-right: 1.875rem;
+    }
+  }
+}
+
+
+.post__num:hover{
+opacity: 1;
+}
+
+
+
+
+
+.clicked{
+  color: $black;
+  border-top: 0.0625rem solid $black;
+  margin-top: -0.0625rem;
+
+}
+
+.noclicked{
+  color: $grey;
+}
+
