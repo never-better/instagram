@@ -1,0 +1,55 @@
+footer{
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  
+
+  background-color: $veryLightgrey;
+}
+
+.footer{
+  &__box{
+    padding: 0 1rem;
+    margin-bottom: 3.25rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: column;
+
+    color: $grey;
+    font-size: $font-xs;
+
+    a{
+      color: $grey;
+    }
+
+  }
+
+  &__row1{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+
+  &__row2{
+    display: flex;
+    justify-content: center;
+    margin: 0.75rem 0;
+  }
+}
+
+.frow1{
+  margin: 0 0.5rem 0.75rem 0.5rem;
+}
+
+.copyright{
+  margin-left: 1rem;
+}

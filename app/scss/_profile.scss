@@ -8,6 +8,18 @@
     justify-content: center;
     width: 31%;
     margin-right: 1.875rem;
+
+    &__border{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      height: 10.375rem;
+      width: 10.375rem;
+
+      border: 0.0625rem solid $lightgrey;
+      border-radius: 50%;
+    }
   }
 
   &__github{
