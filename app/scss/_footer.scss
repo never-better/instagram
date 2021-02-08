@@ -35,8 +35,11 @@ footer{
 
   &__row1{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 1.5rem;
+
+    
   }
 
   &__row2{
@@ -48,6 +51,8 @@ footer{
 
 .frow1{
   margin: 0 0.5rem 0.75rem 0.5rem;
+
+
 }
 
 .language__box{
