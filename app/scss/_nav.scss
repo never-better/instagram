@@ -32,7 +32,7 @@
   }
 
   &__search{
-    display: none;
+    display: block;
     min-width: 13.4375rem;
     height: 1.75rem;
     border: 0.5px solid $lightgrey;
@@ -68,15 +68,11 @@
     
     
 
-    @include breakpoint-up(small){
-      display: block;
-    }
   }
 
 
 
   &__links{
-    flex-shrink: 1;
 
     a{
       &:not(:last-child){

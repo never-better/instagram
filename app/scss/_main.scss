@@ -10,6 +10,7 @@ main{
 .main{
   &__box{
       margin: auto;
+      box-sizing:content-box;
       padding: 1.875rem 1.25rem 0px 1.25rem;
       max-width: 58.4375rem;
       width: 100%;

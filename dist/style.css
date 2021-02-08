@@ -104,7 +104,7 @@ li {
 }
 
 .navbar__search {
-  display: none;
+  display: block;
   min-width: 13.4375rem;
   height: 1.75rem;
   border: 0.5px solid #dbdbdb;
@@ -137,17 +137,6 @@ li {
   top: -0.0625rem;
 }
 
-@media (min-width: 31.25em) {
-  .navbar__search {
-    display: block;
-  }
-}
-
-.navbar__links {
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-}
-
 .navbar__links a:not(:last-child) {
   margin-right: 1rem;
 }
@@ -165,6 +154,8 @@ main {
 
 .main__box {
   margin: auto;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   padding: 1.875rem 1.25rem 0px 1.25rem;
   max-width: 58.4375rem;
   width: 100%;
@@ -178,13 +169,15 @@ main {
 }
 
 .profile__img {
+  position: relative;
+  top: -0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 31%;
+  width: 30%;
   margin-right: 1.875rem;
 }
 
@@ -605,6 +598,25 @@ footer {
 
 .frow1 {
   margin: 0 0.5rem 0.75rem 0.5rem;
+}
+
+.language__box {
+  position: relative;
+}
+
+.language__list {
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  opacity: 0;
+}
+
+.fa-chevron-down {
+  position: relative;
+  margin-left: 0.25rem;
+  top: -0.0625rem;
 }
 
 .copyright {

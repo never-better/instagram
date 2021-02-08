@@ -50,6 +50,26 @@ footer{
   margin: 0 0.5rem 0.75rem 0.5rem;
 }
 
+.language__box{
+  position: relative;
+}
+
+.language__list{
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  opacity: 0;
+}
+
+
+.fa-chevron-down{
+  position: relative;
+  margin-left: 0.25rem;
+  top: -0.0625rem;
+}
+
 .copyright{
   margin-left: 1rem;
 }
