@@ -7,11 +7,19 @@
 
     height: 3.5625rem;
 
+    @include breakpoint-down(medium){
+      height: 2.75rem;
+    }
+
     ul{
       display: flex;
       align-items: center;
 
       height: 100%;
+
+      @include breakpoint-down(medium){
+        width: 100%;
+      }
     }
     li{
     height: 100%;
@@ -19,6 +27,16 @@
 
       &:not(:last-child){
         margin-right: 3.75rem;
+
+        @include breakpoint-down(medium){
+        margin: 0;
+        }
+      }
+
+      @include breakpoint-down(medium){
+        width: 50%;
+        display: flex;
+        justify-content: center;
       }
 
       a{
@@ -26,8 +44,30 @@
         align-items: center;
         height: 100%;
 
+
+
         svg{
           margin-right: 0.25rem;
+
+          @include breakpoint-down(medium){
+            margin: 0;
+          }
+        }
+
+        .for__laptop{
+          display: block;
+
+          @include breakpoint-down(medium){
+            display: none;
+          }
+        }
+
+        .for__mobile{
+          display: none;
+
+          @include breakpoint-down(medium){
+            display: block;
+          }
         }
       }
 
@@ -46,12 +86,20 @@
       display: flex;
       justify-content: space-between;
       margin-bottom: 1.75rem;
+            @include breakpoint-down(medium){
+        margin-bottom: 0;
+      }
+
     }
 
     .row2{
       display: flex;
       justify-content: space-between;
       margin-bottom: 1.75rem;
+
+      @include breakpoint-down(medium){
+        margin-bottom: 0;
+      }
     }
 
     img{
@@ -63,8 +111,21 @@
 
 .post__pic{
   position: relative;
-  width: 18.3125rem;
-  height: 18.3125rem;
+
+  width: 100%;
+  
+  max-width: 18.3125rem;
+  max-height: 18.3125rem;
+
+  &:not(:last-child){
+    margin-right: 1.75rem;
+  }
+
+  @include breakpoint-down(medium){
+    &:not(:last-child){
+      margin-right: 0.1875rem;
+    }
+  }
 }
 
 
@@ -112,6 +173,10 @@ opacity: 1;
   color: $black;
   border-top: 0.0625rem solid $black;
   margin-top: -0.0625rem;
+
+  @include breakpoint-down(medium){
+    border: 0;
+  }
 
 }
 

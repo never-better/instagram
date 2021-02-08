@@ -4,10 +4,22 @@
 
   margin-bottom: 2.5rem;
 
+  @include breakpoint-down(medium){
+    height: 5.5rem;
+    
+    margin-bottom: 1.3125rem;
+
+  }
+
 
   &__li{
     margin-left: 1.5rem;
     padding: 0.625rem 0.9375rem;
+
+    @include breakpoint-down(medium){
+      margin: 0 0.3125rem;
+      padding: 0.3125rem 0 0 0; 
+    }
   }
 
   &__border{
@@ -20,6 +32,11 @@
 
     border: 0.0625rem solid $lightgrey;
     border-radius: 50%;
+
+    @include breakpoint-down (medium){
+      width: 4rem;
+      height: 4rem;
+    }
   }
 
   &__img{
@@ -27,8 +44,6 @@
 
     width: 4.8125rem;
     height: 4.8125rem;
-
-
 
     border-radius: 50%;
 
@@ -38,6 +53,11 @@
       height: 100%;
 
       border-radius: 50%;
+    }
+
+    @include breakpoint-down (medium){
+      width: 3.5rem;
+      height: 3.5rem;
     }
   }
 
@@ -49,5 +69,10 @@
 
     font-size: $font-small;
     font-weight: $weight-bold;
+
+    @include breakpoint-down(medium){
+      padding-top: 0.5rem;
+      font-size: $font-xs;
+    }
   }
 }
